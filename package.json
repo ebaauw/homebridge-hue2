@@ -1,0 +1,45 @@
+{
+  "name": "homebridge-hue2",
+  "description": "Homebridge plugin for Hue",
+  "displayName": "Homebridge Hue v2",
+  "author": "Erik Baauw",
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "keywords": [
+    "homebridge-plugin",
+    "homekit",
+    "philips",
+    "signify",
+    "hue",
+    "philipshue",
+    "philips-hue"
+  ],
+  "main": "index.js",
+  "engines": {
+    "BSB002": "1.48.0",
+    "homebridge": "^1.3.9",
+    "node": "^16.13.1"
+  },
+  "dependencies": {
+    "homebridge-lib": "~5.1.23",
+    "semver": "^7.3.5",
+    "ws": "^8.4.0",
+    "xml2js": "~0.4.23"
+  },
+  "scripts": {
+    "prepare": "standard && rm -rf out && jsdoc -c jsdoc.json",
+    "test": "standard && echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebaauw/homebridge-hue2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ebaauw/homebridge-hue2/issues"
+  },
+  "homepage": "https://github.com/ebaauw/homebridge-hue2#readme",
+  "funding": {
+    "type": "paypal",
+    "url": "https://www.paypal.me/ebaauw/EUR"
+  }
+}
