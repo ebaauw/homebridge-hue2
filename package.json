@@ -16,7 +16,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "BSB002": "1.50.0",
+    "BSB002": "1.52.0",
     "homebridge": "^1.4.1",
     "node": "^16.15.1"
   },
