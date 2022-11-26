@@ -17,11 +17,11 @@
   "main": "index.js",
   "engines": {
     "BSB002": "1.53.0",
-    "homebridge": "^1.5.1",
+    "homebridge": "^1.6.0",
     "node": "^18.12.1"
   },
   "dependencies": {
-    "homebridge-lib": "~6.0.1",
+    "homebridge-lib": "~6.0.2",
     "ws": "^8.11.0",
     "xml2js": "~0.4.23"
   },
