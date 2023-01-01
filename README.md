@@ -14,7 +14,7 @@
 </span>
 
 ## Homebridge plugin for Hue v2
-Copyright © 2022 Erik Baauw. All rights reserved.
+Copyright © 2023 Erik Baauw. All rights reserved.
 
 ### Work in Progress
 See [Future Development of Homebridge Hue](https://github.com/ebaauw/homebridge-hue/issues/1070).
