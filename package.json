@@ -18,11 +18,11 @@
   "engines": {
     "BSB002": "1.53.0",
     "homebridge": "^1.6.0",
-    "node": "^18.12.1"
+    "node": "^18.13.0"
   },
   "dependencies": {
-    "homebridge-lib": "~6.0.2",
-    "ws": "^8.11.0",
+    "homebridge-lib": "~6.2.2",
+    "ws": "^8.12.0",
     "xml2js": "~0.4.23"
   },
   "scripts": {
