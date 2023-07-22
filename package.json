@@ -16,12 +16,12 @@
   ],
   "main": "index.js",
   "engines": {
-    "BSB002": "1.58.0",
+    "BSB002": "1.59.0",
     "homebridge": "^1.6.1",
-    "node": "^18.16.1"
+    "node": "18.17.0||^18||^16"
   },
   "dependencies": {
-    "homebridge-lib": "~6.3.18",
+    "homebridge-lib": "~6.4.0",
     "ws": "^8.13.0",
     "xml2js": "~0.6.0"
   },
