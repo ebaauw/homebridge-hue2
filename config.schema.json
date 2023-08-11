@@ -1,0 +1,106 @@
+{
+  "pluginAlias": "Hue2",
+  "pluginType": "platform",
+  "singular": true,
+  "customUi": false,
+  "headerDisplay": "Homebridge plugin for gen-2 Hue bridge",
+  "footerDisplay": "For a detailed description, see the [wiki](https://github.com/ebaauw/homebridge-hue2/wiki/Configuration).",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "Plugin name as displayed in the Homebridge log.",
+        "type": "string",
+        "required": true,
+        "default": "deCONZ"
+      },
+      "hosts": {
+        "title": "Bridges",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "noResponse": {
+        "description": "Report unreachable lights as <i>No Response</i> in HomeKit.",
+        "type": "boolean"
+      },
+      "parallelRequests": {
+        "description": "The number of ansynchronous requests Homebridge deCONZ sends in parallel to a deCONZ gateway.  Default: 10.",
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 30
+      },
+      "stealth": {
+        "description": "Stealth mode: don't make any calls to the Internet.  Default: false.",
+        "type": "boolean"
+      },
+      "timeout": {
+        "description": "The timeout in seconds to wait for a response from a deCONZ gateway.  Default: 5.",
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 30
+      },
+      "waitTimePut": {
+        "description": "The time, in milliseconds, to wait after sending a PUT request, before sending the next PUT request.  Default: 50.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 50
+      },
+      "waitTimePutGroup": {
+        "description": "The time, in milliseconds, to wait after sending a PUT request to a group, before sending the next PUT request.  Default: 1000.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1000
+      },
+      "waitTimeResend": {
+        "description": "The time, in milliseconds, to wait before resending a request after an ECONNRESET or http status 503 error.  Default: 300.",
+        "type": "integer",
+        "minimum": 100,
+        "maximum": 1000
+      },
+      "waitTimeReset": {
+        "description": "The timeout in milliseconds, to wait before resetting a characteristic value.  Default: 500.",
+        "type": "integer",
+        "minimum": 10,
+        "maximum": 2000
+      },
+      "waitTimeUpdate": {
+        "description": "The time, in milliseconds, to wait for a change from HomeKit to another characteristic for the same light or group, before updating the deCONZ gateway.  Default: 100.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 500
+      }
+    }
+  },
+  "layout": [
+    "name",
+    {
+      "key": "hosts",
+      "type": "array",
+      "items": {
+        "title": "Bridge",
+        "description": "Hostname of the Hue bridge.  Leave empty to discover bridges.",
+        "type": "string"
+      }
+    },
+    {
+      "type": "fieldset",
+      "expandable": true,
+      "title": "Advanced Settings",
+      "description": "Don't change these, unless you understand what you're doing.",
+      "items": [
+        "forceHttp",
+        "noResponse",
+        "parallelRequests",
+        "stealth",
+        "timeout",
+        "waitTimePut",
+        "waitTimePutGroup",
+        "waitTimeResend",
+        "waitTimeReset",
+        "waitTimeUpdate"
+      ]
+    }
+  ]
+}
