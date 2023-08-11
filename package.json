@@ -18,12 +18,12 @@
   "engines": {
     "BSB002": "1.59.0",
     "homebridge": "^1.6.1",
-    "node": "18.17.0||^18||^16"
+    "node": "18.17.1||^18||^16"
   },
   "dependencies": {
-    "homebridge-lib": "~6.4.0",
+    "homebridge-lib": "~6.4.1",
     "ws": "^8.13.0",
-    "xml2js": "~0.6.0"
+    "xml2js": "~0.6.2"
   },
   "scripts": {
     "prepare": "standard && rm -rf out && jsdoc -c jsdoc.json",
