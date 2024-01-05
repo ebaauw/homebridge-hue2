@@ -1,5 +1,5 @@
 // homebridge-hue2/index.js
-// Copyright © 2023 Erik Baauw. All rights reserved.
+// Copyright © 2023-2024 Erik Baauw. All rights reserved.
 //
 // Homebridge plugin for Hue v2.
 
