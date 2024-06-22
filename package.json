@@ -3,6 +3,9 @@
   "description": "Homebridge plugin for Hue v2",
   "displayName": "Homebridge Hue v2",
   "author": "Erik Baauw",
+  "maintainers": [
+    "ebaauw"
+  ],
   "license": "Apache-2.0",
   "version": "0.0.2",
   "keywords": [
@@ -17,7 +20,7 @@
   "main": "index.js",
   "engines": {
     "BSB002": "1.62.0",
-    "homebridge": "^1.7.0",
+    "homebridge": "^1.8.3",
     "node": "^20||^18"
   },
   "dependencies": {
