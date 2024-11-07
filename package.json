@@ -17,15 +17,19 @@
     "philipshue",
     "philips-hue"
   ],
+  "type": "module",
   "main": "index.js",
+  "bin": {
+    "ph": "cli/ph.js"
+  },
   "engines": {
-    "BSB002": "1.62.0",
-    "homebridge": "^1.8.3",
-    "node": "^20||^18"
+    "BSB002": "1.67.0",
+    "homebridge": "^1.8.5||^2.0.0-beta",
+    "node": "^22||^20||^18"
   },
   "dependencies": {
-    "homebridge-lib": "~6.7.5",
-    "xml2js": "~0.6.2"
+    "hb-hue-tools": "~1.1.0",
+    "homebridge-lib": "~7.1.0"
   },
   "scripts": {
     "prepare": "standard && rm -rf out && jsdoc -c jsdoc.json",
