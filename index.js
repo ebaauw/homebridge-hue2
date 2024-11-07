@@ -3,11 +3,15 @@
 //
 // Homebridge plugin for Hue v2.
 
-'use strict'
+import { createRequire } from 'node:module'
 
-const Hue2Platform = require('./lib/Hue2Platform')
+import { Hue2Platform } from './lib/Hue2Platform.js'
+
+const require = createRequire(import.meta.url)
 const packageJson = require('./package.json')
 
-module.exports = function (homebridge) {
+function main (homebridge) {
   Hue2Platform.loadPlatform(homebridge, packageJson, 'Hue2', Hue2Platform)
 }
+
+export { main as default }

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="homebridge-hue2.png" height="200px">  
+  <img src="homebridge-hue.png" height="200px">  
 </p><span align="center">
 
 # Homebridge Hue2

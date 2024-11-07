@@ -8,8 +8,14 @@
       "README.md",
       "index.js",
       "lib",
+      "cli",
+      "node_modules/hb-hue-tools/index.js",
+      "node_modules/hb-hue-tools/lib",
       "node_modules/hb-lib-tools/lib/HttpClient.js"
     ]
+  },
+  "opts": {
+    "recurse": true
   },
   "templates": {
     "monospaceLinks": true
