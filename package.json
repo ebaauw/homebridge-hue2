@@ -28,8 +28,8 @@
     "node": "^22||^20||^18"
   },
   "dependencies": {
-    "hb-hue-tools": "~1.1.5",
-    "homebridge-lib": "~7.1.2"
+    "hb-hue-tools": "~1.1.6",
+    "homebridge-lib": "~7.1.3"
   },
   "scripts": {
     "prepare": "standard && rm -rf out && jsdoc -c jsdoc.json",
